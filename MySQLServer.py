@@ -22,7 +22,7 @@ def create_database():
             cursor.close()
             connection.close()
 
-    except mysql.connector.Error as e:  # This is where we catch MySQL-specific errors
+    except mysql.connector.Error as e:  # Handle MySQL-specific errors
         print(f"Error: {e}")
 
 # Execute the function to create the database
