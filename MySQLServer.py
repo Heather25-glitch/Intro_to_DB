@@ -13,8 +13,8 @@ def create_database():
         if connection.is_connected():
             # Create a cursor object to interact with the MySQL server
             cursor = connection.cursor()
-            
-            # SQL query to create database
+
+            # SQL query to create database (without using SELECT or SHOW)
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
 
