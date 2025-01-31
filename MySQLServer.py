@@ -14,7 +14,7 @@ def create_database():
             # Create a cursor object to interact with the MySQL server
             cursor = connection.cursor()
 
-            # SQL query to create database (without using SELECT or SHOW)
+            # SQL query to create the database without using SELECT or SHOW
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
 
